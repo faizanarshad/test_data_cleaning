@@ -1,6 +1,11 @@
 """
 Evaluate saved BiLSTM on the same stratified validation split as training (seed=42).
-Reports accuracy, precision, recall, F1 (macro & weighted), and top-k accuracy.
+
+Reports accuracy, precision, recall, F1 (macro & weighted), top-3 accuracy, and
+writes a full per-class report to bilstm_artifacts/evaluation_report.txt.
+
+Requires: bilstm_artifacts/bilstm_best.keras, label_encoder_classes.json, cleaned_training_data.csv
+Run: python evaluate_bilstm.py
 """
 
 from __future__ import annotations
@@ -24,10 +29,10 @@ BASE = Path(__file__).resolve().parent
 ARTIFACT_DIR = BASE / "bilstm_artifacts"
 MODEL_PATH = ARTIFACT_DIR / "bilstm_best.keras"
 CLASSES_PATH = ARTIFACT_DIR / "label_encoder_classes.json"
-DATA_PATH = BASE / "brand_task.csv"
 
 
 def string_matrix_tf(rows: list[str]) -> tf.Tensor:
+    """Batch of shape (N, 1) with dtype tf.string for the Keras model input."""
     flat = tf.constant(rows, dtype=tf.string)
     return tf.reshape(flat, (-1, 1))
 
@@ -42,6 +47,7 @@ def load_cleaned_frame() -> pd.DataFrame:
 
 
 def main() -> None:
+    """Re-split data like training, run predictions, print and save metrics."""
     print("=" * 60)
     print("BiLSTM evaluation")
     print("=" * 60)
@@ -52,6 +58,7 @@ def main() -> None:
     with open(CLASSES_PATH, encoding="utf-8") as f:
         class_list = [int(x) for x in json.load(f)]
 
+    # Map raw ADG_CODE integers to contiguous class indices used by the softmax output.
     code_to_idx = {c: i for i, c in enumerate(class_list)}
 
     df = load_cleaned_frame()
@@ -82,6 +89,7 @@ def main() -> None:
         y_val_np, y_pred, average="weighted", zero_division=0
     )
 
+    # Top-3: sklearn helper, or manual fallback if sklearn raises on edge cases.
     try:
         top3 = top_k_accuracy_score(y_val_np, probs, k=min(3, probs.shape[1]))
     except (ValueError, TypeError):

@@ -4,6 +4,9 @@ Given an ADG_CODE, infer the most likely BRAND and industry (CATEGORY).
 Uses the training CSV: for each code we take the majority / frequency-weighted
 brand and category. This is a data-driven lookup, not a neural model (a code ID
 alone has no text semantics).
+
+Cache: bilstm_artifacts/adg_brand_category_stats.json (--rebuild-cache after CSV edits)
+Run: python adg_to_brand_industry.py <CODE>
 """
 
 from __future__ import annotations
@@ -21,6 +24,7 @@ CACHE_PATH = BASE / "bilstm_artifacts" / "adg_brand_category_stats.json"
 
 
 def load_dataframe() -> pd.DataFrame:
+    """Read brand_task.csv with tolerant encoding; coerce ADG_CODE; fill brand/category."""
     for enc in ("utf-8-sig", "utf-8", "cp1252", "latin1"):
         try:
             df = pd.read_csv(DATA_PATH, encoding=enc)
@@ -39,7 +43,7 @@ def load_dataframe() -> pd.DataFrame:
 
 
 def build_stats(df: pd.DataFrame) -> dict:
-    """Per ADG_CODE: brand and category distributions."""
+    """Build nested dict: ADG_CODE string key -> row counts per brand and per category."""
     out: dict[str, dict] = {}
     for code, g in df.groupby("ADG_CODE"):
         key = str(int(code))
@@ -55,6 +59,7 @@ def build_stats(df: pd.DataFrame) -> dict:
 
 
 def predict_brand_industry(stats: dict, code: int, top_k: int = 3) -> dict:
+    """Return majority brand/category with confidence = count/total for that code."""
     key = str(int(code))
     if key not in stats:
         return {
@@ -67,6 +72,7 @@ def predict_brand_industry(stats: dict, code: int, top_k: int = 3) -> dict:
     n = s["n_rows"]
 
     def top_entries(counts: dict, k: int) -> list[dict]:
+        """Sort label counts descending; attach confidence = count / n_rows."""
         items = sorted(counts.items(), key=lambda x: -x[1])[:k]
         return [
             {
@@ -98,6 +104,7 @@ def predict_brand_industry(stats: dict, code: int, top_k: int = 3) -> dict:
 
 
 def parse_code(s: str) -> int:
+    """Extract first integer from CLI string (allows spaces or extra text)."""
     s = str(s).strip()
     m = re.search(r"(\d+)", s)
     if not m:
@@ -106,6 +113,7 @@ def parse_code(s: str) -> int:
 
 
 def main() -> None:
+    """Load or rebuild JSON cache; print predictions or usage."""
     parser = argparse.ArgumentParser(
         description="Given ADG_CODE, predict brand + industry (category) from data."
     )
@@ -126,6 +134,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    # Build JSON histogram cache from CSV if missing or user requested rebuild.
     if args.rebuild_cache or not CACHE_PATH.is_file():
         CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
         df = load_dataframe()

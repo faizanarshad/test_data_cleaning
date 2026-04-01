@@ -3,6 +3,9 @@ Predict ADG_CODE with the saved BiLSTM model.
 
 Uses the same text format as training:
   GOOD_NAME + " [BRAND] " + BRAND + " [CAT] " + CATEGORY
+
+Requires bilstm_artifacts/bilstm_best.keras (train with bilstm_train.py first).
+Run: python predict_bilstm.py [-n NAME -b BRAND -c CATEGORY] [--top-k K]
 """
 
 from __future__ import annotations
@@ -24,6 +27,7 @@ CLASSES_PATH = ARTIFACT_DIR / "label_encoder_classes.json"
 
 
 def build_text_input(good_name: str, brand: str = "", category: str = "") -> str:
+    """Match training pipeline: cleaned fields joined with fixed [BRAND] / [CAT] markers."""
     gn = clean_text(good_name)
     br = clean_text(brand) if brand else ""
     cat = clean_text(category) if category else ""
@@ -31,11 +35,13 @@ def build_text_input(good_name: str, brand: str = "", category: str = "") -> str
 
 
 def string_matrix(rows: list[str]) -> tf.Tensor:
+    """Shape (batch, 1) tf.string batch for Sequential model."""
     flat = tf.constant(rows, dtype=tf.string)
     return tf.reshape(flat, (-1, 1))
 
 
 def load_model_and_classes():
+    """Load checkpoint and ADG code list (index i = softmax class i)."""
     if not MODEL_PATH.is_file():
         raise FileNotFoundError(
             f"Missing {MODEL_PATH}. Train first: python bilstm_train.py"
@@ -52,7 +58,7 @@ def predict_adg(
     text_inputs: list[str],
     top_k: int = 5,
 ) -> list[dict]:
-    """Return top-k predictions per row."""
+    """For each input string, return top_k (adg_code, probability) pairs."""
     X = string_matrix([str(t) for t in text_inputs])
     probs = model.predict(X, batch_size=32, verbose=0)
     results = []
@@ -73,6 +79,7 @@ def predict_adg(
 
 
 def main() -> None:
+    """CLI: build text from args or run built-in demos; print ranked ADG codes."""
     parser = argparse.ArgumentParser(description="Predict ADG_CODE from product text.")
     parser.add_argument(
         "--name",

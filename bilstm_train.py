@@ -3,6 +3,9 @@ Clean brand_task.csv and train a BiLSTM classifier to predict ADG_CODE from text
 
 Input columns: ADG_CODE, GOOD_NAME, BRAND, CATEGORY
 Text fed to the model: GOOD_NAME + BRAND + CATEGORY (supervised rows only).
+
+Outputs (see ARTIFACT_DIR): Keras model, label JSON, cleaned CSV for evaluation.
+Run: python bilstm_train.py
 """
 
 from __future__ import annotations
@@ -27,11 +30,12 @@ BASE = Path(__file__).resolve().parent
 DATA_PATH = BASE / "brand_task.csv"
 ARTIFACT_DIR = BASE / "bilstm_artifacts"
 
-# Minimum rows per class so stratified split works
+# Classes with fewer than this many rows are dropped so train_test_split(..., stratify=y) works.
 MIN_PER_CLASS = 2
 
 
 def clean_text(s: str) -> str:
+    """Normalize whitespace and punctuation in product/brand/category strings."""
     if pd.isna(s) or s is None:
         return ""
     t = str(s)
@@ -43,7 +47,7 @@ def clean_text(s: str) -> str:
 
 
 def load_and_clean_dataframe(csv_path: Path) -> pd.DataFrame:
-    """Load CSV and return cleaned rows with valid ADG_CODE."""
+    """Load CSV; keep rows with labels; dedupe; drop rare classes; build text_input column."""
     encodings = ("utf-8-sig", "utf-8", "cp1252", "latin1")
     df = None
     for enc in encodings:
@@ -94,6 +98,7 @@ def load_and_clean_dataframe(csv_path: Path) -> pd.DataFrame:
 
 
 def main() -> None:
+    """Train TextVectorization + BiLSTM; save model and frozen cleaned table."""
     print("=" * 60)
     print("BiLSTM — data cleaning + training")
     print("=" * 60)
@@ -117,7 +122,7 @@ def main() -> None:
     y_train = np.asarray(y_train, dtype=np.int32)
     y_val = np.asarray(y_val, dtype=np.int32)
 
-    # tf.string tensors (Keras 3 rejects numpy unicode / object for string inputs)
+    # Keras 3 string inputs: use tf.string tensors (not numpy object/unicode arrays).
     def string_matrix(rows: list[str]) -> tf.Tensor:
         flat = tf.constant(rows, dtype=tf.string)
         return tf.reshape(flat, (-1, 1))
@@ -135,8 +140,10 @@ def main() -> None:
         split="whitespace",
     )
     vec.adapt(tf.constant(tr_texts, dtype=tf.string))
+    # Embedding rows must match TextVectorization vocabulary size (includes OOV/padding).
     embed_vocab = int(vec.vocabulary_size())
 
+    # Embedding -> BiLSTM -> softmax over ADG classes (encoded 0..num_classes-1).
     model = keras.Sequential(
         [
             layers.Input(shape=(1,), dtype=tf.string),
