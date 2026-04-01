@@ -1,0 +1,2599 @@
+{
+"0": {
+"n_rows": 1,
+"brands": {
+"Nescafe": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"47": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"56": {
+"n_rows": 6,
+"brands": {
+"Unknown": 4,
+"Nescafe": 1,
+"Coca-Cola": 1
+},
+"categories": {
+"Other": 4,
+"Beverages": 2
+}
+},
+"101": {
+"n_rows": 46,
+"brands": {
+"Unknown": 15,
+"Yashkino": 5,
+"Roshen": 5,
+"Nescafe": 4,
+"Marianna": 3,
+"Gillette": 2,
+"Athenk": 2,
+"Royal": 2,
+"Milka": 2,
+"Grand Candy": 1,
+"Nivea": 1,
+"Silk Soft": 1,
+"Art Armenia": 1,
+"Colgate": 1,
+"Pampers": 1
+},
+"categories": {
+"Other": 27,
+"Food Products": 6,
+"Beverages": 6,
+"Cosmetics": 3,
+"Clothing": 3,
+"Household": 1
+}
+},
+"201": {
+"n_rows": 1,
+"brands": {
+"Athenk": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"206": {
+"n_rows": 1,
+"brands": {
+"Ganjasar": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"207": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Ganjasar": 1
+},
+"categories": {
+"Other": 1,
+"Food Products": 1
+}
+},
+"208": {
+"n_rows": 4,
+"brands": {
+"Athenk": 3,
+"Ganjasar": 1
+},
+"categories": {
+"Other": 3,
+"Food Products": 1
+}
+},
+"210": {
+"n_rows": 7,
+"brands": {
+"Ganjasar": 4,
+"Athenk": 2,
+"Unknown": 1
+},
+"categories": {
+"Food Products": 5,
+"Other": 2
+}
+},
+"401": {
+"n_rows": 13,
+"brands": {
+"Marianna": 13
+},
+"categories": {
+"Food Products": 8,
+"Other": 4,
+"Cosmetics": 1
+}
+},
+"402": {
+"n_rows": 1,
+"brands": {
+"Marianna": 1
+},
+"categories": {
+"Food Products": 1
+}
+},
+"403": {
+"n_rows": 20,
+"brands": {
+"Marianna": 19,
+"Unknown": 1
+},
+"categories": {
+"Food Products": 12,
+"Other": 8
+}
+},
+"404": {
+"n_rows": 1,
+"brands": {
+"Roshen": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"405": {
+"n_rows": 4,
+"brands": {
+"Marianna": 3,
+"Unknown": 1
+},
+"categories": {
+"Other": 3,
+"Food Products": 1
+}
+},
+"406": {
+"n_rows": 22,
+"brands": {
+"Marianna": 22
+},
+"categories": {
+"Food Products": 17,
+"Other": 4,
+"Cosmetics": 1
+}
+},
+"408": {
+"n_rows": 1,
+"brands": {
+"Pampers": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"410": {
+"n_rows": 1,
+"brands": {
+"Artfood": 1
+},
+"categories": {
+"Food Products": 1
+}
+},
+"511": {
+"n_rows": 2,
+"brands": {
+"Grand Candy": 1,
+"Coca-Cola": 1
+},
+"categories": {
+"Food Products": 1,
+"Beverages": 1
+}
+},
+"701": {
+"n_rows": 4,
+"brands": {
+"Apache": 4
+},
+"categories": {
+"Other": 4
+}
+},
+"708": {
+"n_rows": 1,
+"brands": {
+"Artfood": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"711": {
+"n_rows": 7,
+"brands": {
+"Artfood": 5,
+"Royal": 1,
+"Athenk": 1
+},
+"categories": {
+"Food Products": 3,
+"Other": 3,
+"Beverages": 1
+}
+},
+"712": {
+"n_rows": 1,
+"brands": {
+"Artfood": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"714": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"801": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"901": {
+"n_rows": 44,
+"brands": {
+"Nescafe": 31,
+"Royal": 11,
+"Coca-Cola": 1,
+"Unknown": 1
+},
+"categories": {
+"Beverages": 38,
+"Other": 5,
+"Food Products": 1
+}
+},
+"902": {
+"n_rows": 4,
+"brands": {
+"Unknown": 2,
+"Royal": 2
+},
+"categories": {
+"Beverages": 3,
+"Other": 1
+}
+},
+"906": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1005": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Cosmetics": 1
+}
+},
+"1006": {
+"n_rows": 5,
+"brands": {
+"Nescafe": 1,
+"Royal": 1,
+"Artfood": 1,
+"Roshen": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 2,
+"Food Products": 2,
+"Beverages": 1
+}
+},
+"1102": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Ganjasar": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"1104": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1105": {
+"n_rows": 2,
+"brands": {
+"Apache": 2
+},
+"categories": {
+"Other": 1,
+"Food Products": 1
+}
+},
+"1206": {
+"n_rows": 8,
+"brands": {
+"Apache": 8
+},
+"categories": {
+"Other": 8
+}
+},
+"1209": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1302": {
+"n_rows": 1,
+"brands": {
+"Silk Soft": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1404": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1517": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Food Products": 1
+}
+},
+"1601": {
+"n_rows": 92,
+"brands": {
+"Ganjasar": 43,
+"Athenk": 39,
+"Unknown": 7,
+"Milka": 1,
+"Daroink": 1,
+"Artfood": 1
+},
+"categories": {
+"Food Products": 62,
+"Other": 29,
+"Cosmetics": 1
+}
+},
+"1602": {
+"n_rows": 16,
+"brands": {
+"Ganjasar": 8,
+"Athenk": 7,
+"Artfood": 1
+},
+"categories": {
+"Other": 12,
+"Food Products": 4
+}
+},
+"1604": {
+"n_rows": 1,
+"brands": {
+"Artfood": 1
+},
+"categories": {
+"Beverages": 1
+}
+},
+"1701": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"1702": {
+"n_rows": 4,
+"brands": {
+"Apache": 2,
+"Milka": 1,
+"Grand Candy": 1
+},
+"categories": {
+"Other": 3,
+"Food Products": 1
+}
+},
+"1704": {
+"n_rows": 45,
+"brands": {
+"Roshen": 15,
+"Unknown": 8,
+"Yashkino": 7,
+"Apache": 5,
+"Grand Candy": 4,
+"Daroink": 4,
+"Milka": 1,
+"Royal": 1
+},
+"categories": {
+"Other": 29,
+"Food Products": 15,
+"Cosmetics": 1
+}
+},
+"1805": {
+"n_rows": 2,
+"brands": {
+"Grand Candy": 1,
+"Milka": 1
+},
+"categories": {
+"Household": 1,
+"Cosmetics": 1
+}
+},
+"1806": {
+"n_rows": 148,
+"brands": {
+"Unknown": 37,
+"Milka": 32,
+"Roshen": 27,
+"Grand Candy": 18,
+"Yashkino": 17,
+"Apache": 7,
+"Daroink": 4,
+"Nescafe": 2,
+"Colgate": 1,
+"Coca-Cola": 1,
+"Gillette": 1,
+"Royal": 1
+},
+"categories": {
+"Food Products": 77,
+"Other": 64,
+"Beverages": 4,
+"Cosmetics": 2,
+"Clothing": 1
+}
+},
+"1901": {
+"n_rows": 4,
+"brands": {
+"Ganjasar": 1,
+"Nescafe": 1,
+"Pampers": 1,
+"Royal": 1
+},
+"categories": {
+"Other": 2,
+"Food Products": 1,
+"Beverages": 1
+}
+},
+"1902": {
+"n_rows": 10,
+"brands": {
+"Athenk": 5,
+"Ganjasar": 4,
+"Apache": 1
+},
+"categories": {
+"Other": 6,
+"Food Products": 4
+}
+},
+"1904": {
+"n_rows": 11,
+"brands": {
+"Apache": 7,
+"Daroink": 3,
+"Nescafe": 1
+},
+"categories": {
+"Other": 10,
+"Beverages": 1
+}
+},
+"1905": {
+"n_rows": 145,
+"brands": {
+"Daroink": 33,
+"Yashkino": 31,
+"Unknown": 20,
+"Milka": 18,
+"Apache": 17,
+"Grand Candy": 12,
+"Roshen": 12,
+"Artfood": 1,
+"Nescafe": 1
+},
+"categories": {
+"Other": 75,
+"Food Products": 69,
+"Beverages": 1
+}
+},
+"2001": {
+"n_rows": 24,
+"brands": {
+"Artfood": 9,
+"Royal": 8,
+"Unknown": 6,
+"Marianna": 1
+},
+"categories": {
+"Other": 15,
+"Food Products": 7,
+"Beverages": 2
+}
+},
+"2002": {
+"n_rows": 8,
+"brands": {
+"Artfood": 6,
+"Apache": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 8
+}
+},
+"2003": {
+"n_rows": 2,
+"brands": {
+"Artfood": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"2004": {
+"n_rows": 4,
+"brands": {
+"Royal": 3,
+"Artfood": 1
+},
+"categories": {
+"Other": 4
+}
+},
+"2005": {
+"n_rows": 21,
+"brands": {
+"Artfood": 14,
+"Royal": 6,
+"Unknown": 1
+},
+"categories": {
+"Other": 13,
+"Food Products": 6,
+"Beverages": 2
+}
+},
+"2006": {
+"n_rows": 2,
+"brands": {
+"Artfood": 1,
+"Royal": 1
+},
+"categories": {
+"Beverages": 1,
+"Other": 1
+}
+},
+"2007": {
+"n_rows": 3,
+"brands": {
+"Royal": 1,
+"Grand Candy": 1,
+"Yashkino": 1
+},
+"categories": {
+"Food Products": 2,
+"Beverages": 1
+}
+},
+"2008": {
+"n_rows": 4,
+"brands": {
+"Apache": 3,
+"Unknown": 1
+},
+"categories": {
+"Other": 3,
+"Beverages": 1
+}
+},
+"2009": {
+"n_rows": 12,
+"brands": {
+"Artfood": 4,
+"Coca-Cola": 4,
+"Unknown": 3,
+"Royal": 1
+},
+"categories": {
+"Beverages": 10,
+"Other": 2
+}
+},
+"2101": {
+"n_rows": 27,
+"brands": {
+"Nescafe": 16,
+"Unknown": 4,
+"Royal": 2,
+"Yashkino": 2,
+"Milka": 1,
+"Coca-Cola": 1,
+"Grand Candy": 1
+},
+"categories": {
+"Beverages": 19,
+"Other": 7,
+"Food Products": 1
+}
+},
+"2103": {
+"n_rows": 14,
+"brands": {
+"Artfood": 12,
+"Unknown": 2
+},
+"categories": {
+"Other": 7,
+"Food Products": 6,
+"Beverages": 1
+}
+},
+"2105": {
+"n_rows": 16,
+"brands": {
+"Grand Candy": 14,
+"Marianna": 2
+},
+"categories": {
+"Food Products": 15,
+"Other": 1
+}
+},
+"2106": {
+"n_rows": 22,
+"brands": {
+"Unknown": 5,
+"Milka": 4,
+"Gillette": 2,
+"Daroink": 1,
+"Savax": 1,
+"Nivea": 1,
+"Silk Soft": 1,
+"Apache": 1,
+"Grand Candy": 1,
+"Yashkino": 1,
+"Ganjasar": 1,
+"Nescafe": 1,
+"Coca-Cola": 1,
+"Artfood": 1
+},
+"categories": {
+"Other": 13,
+"Food Products": 3,
+"Beverages": 3,
+"Household": 2,
+"Cosmetics": 1
+}
+},
+"2201": {
+"n_rows": 5,
+"brands": {
+"Unknown": 2,
+"Coca-Cola": 2,
+"Royal": 1
+},
+"categories": {
+"Beverages": 5
+}
+},
+"2202": {
+"n_rows": 48,
+"brands": {
+"Coca-Cola": 39,
+"Unknown": 4,
+"Grand Candy": 2,
+"Yashkino": 1,
+"Nescafe": 1,
+"Milka": 1
+},
+"categories": {
+"Beverages": 42,
+"Other": 5,
+"Food Products": 1
+}
+},
+"2203": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"2204": {
+"n_rows": 37,
+"brands": {
+"Unknown": 25,
+"Art Armenia": 5,
+"Armenia": 5,
+"Marianna": 1,
+"Zara": 1
+},
+"categories": {
+"Beverages": 31,
+"Other": 6
+}
+},
+"2205": {
+"n_rows": 4,
+"brands": {
+"Unknown": 3,
+"Savax": 1
+},
+"categories": {
+"Beverages": 3,
+"Other": 1
+}
+},
+"2206": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Beverages": 1
+}
+},
+"2207": {
+"n_rows": 3,
+"brands": {
+"Unknown": 3
+},
+"categories": {
+"Other": 3
+}
+},
+"2208": {
+"n_rows": 17,
+"brands": {
+"Unknown": 16,
+"Armenia": 1
+},
+"categories": {
+"Other": 14,
+"Clothing": 2,
+"Beverages": 1
+}
+},
+"2209": {
+"n_rows": 2,
+"brands": {
+"Artfood": 2
+},
+"categories": {
+"Other": 2
+}
+},
+"2301": {
+"n_rows": 1,
+"brands": {
+"Ganjasar": 1
+},
+"categories": {
+"Food Products": 1
+}
+},
+"2309": {
+"n_rows": 4,
+"brands": {
+"Royal": 4
+},
+"categories": {
+"Other": 4
+}
+},
+"2401": {
+"n_rows": 3,
+"brands": {
+"Unknown": 2,
+"Royal": 1
+},
+"categories": {
+"Other": 3
+}
+},
+"2402": {
+"n_rows": 31,
+"brands": {
+"Unknown": 30,
+"Alex": 1
+},
+"categories": {
+"Other": 31
+}
+},
+"2403": {
+"n_rows": 2,
+"brands": {
+"Unknown": 2
+},
+"categories": {
+"Other": 2
+}
+},
+"2936": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3003": {
+"n_rows": 5,
+"brands": {
+"Unknown": 4,
+"Pampers": 1
+},
+"categories": {
+"Other": 5
+}
+},
+"3004": {
+"n_rows": 14,
+"brands": {
+"Unknown": 7,
+"Pampers": 4,
+"Armenia": 1,
+"Nivea": 1,
+"Colgate": 1
+},
+"categories": {
+"Other": 12,
+"Cosmetics": 2
+}
+},
+"3005": {
+"n_rows": 9,
+"brands": {
+"Unknown": 5,
+"Salve": 3,
+"Pampers": 1
+},
+"categories": {
+"Other": 8,
+"Clothing": 1
+}
+},
+"3208": {
+"n_rows": 8,
+"brands": {
+"Unknown": 8
+},
+"categories": {
+"Cosmetics": 6,
+"Other": 2
+}
+},
+"3209": {
+"n_rows": 3,
+"brands": {
+"Unknown": 2,
+"Royal": 1
+},
+"categories": {
+"Other": 3
+}
+},
+"3211": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Food Products": 1
+}
+},
+"3212": {
+"n_rows": 1,
+"brands": {
+"Royal": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3302": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Cosmetics": 1
+}
+},
+"3303": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Nivea": 1
+},
+"categories": {
+"Clothing": 1,
+"Other": 1
+}
+},
+"3304": {
+"n_rows": 40,
+"brands": {
+"Nivea": 20,
+"Garnier": 11,
+"Unknown": 3,
+"Gillette": 2,
+"Colgate": 1,
+"Pampers": 1,
+"Silk Soft": 1,
+"Salve": 1
+},
+"categories": {
+"Cosmetics": 26,
+"Other": 12,
+"Clothing": 1,
+"Beverages": 1
+}
+},
+"3305": {
+"n_rows": 46,
+"brands": {
+"Garnier": 36,
+"Nivea": 5,
+"Unknown": 5
+},
+"categories": {
+"Cosmetics": 40,
+"Other": 5,
+"Household": 1
+}
+},
+"3306": {
+"n_rows": 49,
+"brands": {
+"Colgate": 46,
+"Unknown": 3
+},
+"categories": {
+"Cosmetics": 28,
+"Other": 17,
+"Clothing": 4
+}
+},
+"3307": {
+"n_rows": 40,
+"brands": {
+"Nivea": 24,
+"Gillette": 9,
+"Silk Soft": 2,
+"Unknown": 2,
+"Garnier": 2,
+"Salve": 1
+},
+"categories": {
+"Cosmetics": 25,
+"Other": 7,
+"Clothing": 5,
+"Household": 3
+}
+},
+"3401": {
+"n_rows": 22,
+"brands": {
+"Savax": 8,
+"Nivea": 5,
+"Silk Soft": 4,
+"Unknown": 2,
+"Gillette": 1,
+"Garnier": 1,
+"Colgate": 1
+},
+"categories": {
+"Cosmetics": 9,
+"Household": 9,
+"Other": 3,
+"Clothing": 1
+}
+},
+"3402": {
+"n_rows": 51,
+"brands": {
+"Savax": 43,
+"Unknown": 4,
+"Nivea": 2,
+"Gillette": 1,
+"Coca-Cola": 1
+},
+"categories": {
+"Household": 34,
+"Other": 12,
+"Cosmetics": 2,
+"Clothing": 1,
+"Auto Parts": 1,
+"Beverages": 1
+}
+},
+"3405": {
+"n_rows": 1,
+"brands": {
+"Colgate": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3506": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"3805": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3808": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3822": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3901": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3916": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"3917": {
+"n_rows": 6,
+"brands": {
+"Unknown": 5,
+"Mercedes-Benz": 1
+},
+"categories": {
+"Other": 5,
+"Auto Parts": 1
+}
+},
+"3919": {
+"n_rows": 5,
+"brands": {
+"Unknown": 4,
+"Coca-Cola": 1
+},
+"categories": {
+"Household": 3,
+"Beverages": 1,
+"Other": 1
+}
+},
+"3921": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"3922": {
+"n_rows": 3,
+"brands": {
+"Unknown": 3
+},
+"categories": {
+"Other": 3
+}
+},
+"3923": {
+"n_rows": 2,
+"brands": {
+"Coca-Cola": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"3924": {
+"n_rows": 5,
+"brands": {
+"Unknown": 4,
+"Colgate": 1
+},
+"categories": {
+"Other": 4,
+"Auto Parts": 1
+}
+},
+"3925": {
+"n_rows": 9,
+"brands": {
+"Unknown": 9
+},
+"categories": {
+"Other": 9
+}
+},
+"3926": {
+"n_rows": 10,
+"brands": {
+"Unknown": 6,
+"Mercedes-Benz": 3,
+"Samsung": 1
+},
+"categories": {
+"Other": 5,
+"Auto Parts": 3,
+"Household": 1,
+"Electronics": 1
+}
+},
+"4009": {
+"n_rows": 3,
+"brands": {
+"Unknown": 2,
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 2,
+"Other": 1
+}
+},
+"4010": {
+"n_rows": 2,
+"brands": {
+"Mercedes-Benz": 2
+},
+"categories": {
+"Auto Parts": 2
+}
+},
+"4011": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"4014": {
+"n_rows": 2,
+"brands": {
+"Nivea": 2
+},
+"categories": {
+"Cosmetics": 2
+}
+},
+"4015": {
+"n_rows": 5,
+"brands": {
+"Unknown": 2,
+"Alex": 2,
+"Gillette": 1
+},
+"categories": {
+"Clothing": 4,
+"Auto Parts": 1
+}
+},
+"4016": {
+"n_rows": 6,
+"brands": {
+"Unknown": 3,
+"Mercedes-Benz": 3
+},
+"categories": {
+"Auto Parts": 4,
+"Other": 2
+}
+},
+"4202": {
+"n_rows": 7,
+"brands": {
+"Zara": 4,
+"Samsung": 2,
+"Unknown": 1
+},
+"categories": {
+"Clothing": 5,
+"Electronics": 2
+}
+},
+"4203": {
+"n_rows": 1,
+"brands": {
+"Zara": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"4419": {
+"n_rows": 1,
+"brands": {
+"Zara": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"4420": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Zara": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"4421": {
+"n_rows": 2,
+"brands": {
+"Armenia": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"4601": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"4706": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"4803": {
+"n_rows": 18,
+"brands": {
+"Silk Soft": 13,
+"Unknown": 2,
+"Zara": 2,
+"Pampers": 1
+},
+"categories": {
+"Household": 14,
+"Other": 4
+}
+},
+"4806": {
+"n_rows": 1,
+"brands": {
+"Zara": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"4811": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"4817": {
+"n_rows": 1,
+"brands": {
+"Silk Soft": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"4818": {
+"n_rows": 25,
+"brands": {
+"Silk Soft": 12,
+"Unknown": 10,
+"Zara": 2,
+"Gillette": 1
+},
+"categories": {
+"Household": 13,
+"Other": 11,
+"Clothing": 1
+}
+},
+"4819": {
+"n_rows": 2,
+"brands": {
+"Royal": 1,
+"Unknown": 1
+},
+"categories": {
+"Cosmetics": 1,
+"Other": 1
+}
+},
+"4820": {
+"n_rows": 3,
+"brands": {
+"Royal": 2,
+"Unknown": 1
+},
+"categories": {
+"Other": 3
+}
+},
+"4823": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Coca-Cola": 1
+},
+"categories": {
+"Other": 1,
+"Beverages": 1
+}
+},
+"4901": {
+"n_rows": 3,
+"brands": {
+"Unknown": 3
+},
+"categories": {
+"Other": 3
+}
+},
+"5407": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"5601": {
+"n_rows": 4,
+"brands": {
+"Salve": 4
+},
+"categories": {
+"Other": 4
+}
+},
+"5702": {
+"n_rows": 1,
+"brands": {
+"Zara": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"6101": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6102": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6103": {
+"n_rows": 7,
+"brands": {
+"Unknown": 6,
+"Gillette": 1
+},
+"categories": {
+"Clothing": 5,
+"Other": 2
+}
+},
+"6104": {
+"n_rows": 14,
+"brands": {
+"Gillette": 8,
+"Unknown": 4,
+"Zara": 2
+},
+"categories": {
+"Clothing": 9,
+"Other": 5
+}
+},
+"6105": {
+"n_rows": 5,
+"brands": {
+"Unknown": 3,
+"Alex": 1,
+"Zara": 1
+},
+"categories": {
+"Clothing": 5
+}
+},
+"6106": {
+"n_rows": 3,
+"brands": {
+"Zara": 2,
+"Unknown": 1
+},
+"categories": {
+"Other": 2,
+"Clothing": 1
+}
+},
+"6109": {
+"n_rows": 8,
+"brands": {
+"Unknown": 7,
+"Zara": 1
+},
+"categories": {
+"Clothing": 8
+}
+},
+"6110": {
+"n_rows": 12,
+"brands": {
+"Unknown": 7,
+"Gillette": 3,
+"Zara": 2
+},
+"categories": {
+"Clothing": 11,
+"Other": 1
+}
+},
+"6111": {
+"n_rows": 15,
+"brands": {
+"Zara": 8,
+"Unknown": 5,
+"Alex": 1,
+"Gillette": 1
+},
+"categories": {
+"Clothing": 11,
+"Other": 4
+}
+},
+"6112": {
+"n_rows": 7,
+"brands": {
+"Unknown": 6,
+"Zara": 1
+},
+"categories": {
+"Clothing": 4,
+"Other": 3
+}
+},
+"6114": {
+"n_rows": 5,
+"brands": {
+"Zara": 5
+},
+"categories": {
+"Clothing": 5
+}
+},
+"6115": {
+"n_rows": 55,
+"brands": {
+"Alex": 49,
+"Unknown": 6
+},
+"categories": {
+"Clothing": 53,
+"Other": 2
+}
+},
+"6116": {
+"n_rows": 4,
+"brands": {
+"Unknown": 4
+},
+"categories": {
+"Other": 4
+}
+},
+"6201": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Zara": 1
+},
+"categories": {
+"Clothing": 2
+}
+},
+"6202": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6203": {
+"n_rows": 12,
+"brands": {
+"Unknown": 8,
+"Zara": 4
+},
+"categories": {
+"Clothing": 11,
+"Other": 1
+}
+},
+"6204": {
+"n_rows": 10,
+"brands": {
+"Unknown": 6,
+"Zara": 3,
+"Gillette": 1
+},
+"categories": {
+"Other": 6,
+"Clothing": 4
+}
+},
+"6205": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"6207": {
+"n_rows": 5,
+"brands": {
+"Unknown": 3,
+"Alex": 2
+},
+"categories": {
+"Clothing": 5
+}
+},
+"6208": {
+"n_rows": 2,
+"brands": {
+"Alex": 1,
+"Unknown": 1
+},
+"categories": {
+"Clothing": 2
+}
+},
+"6209": {
+"n_rows": 7,
+"brands": {
+"Zara": 6,
+"Unknown": 1
+},
+"categories": {
+"Clothing": 7
+}
+},
+"6211": {
+"n_rows": 3,
+"brands": {
+"Zara": 3
+},
+"categories": {
+"Clothing": 2,
+"Other": 1
+}
+},
+"6215": {
+"n_rows": 2,
+"brands": {
+"Zara": 2
+},
+"categories": {
+"Clothing": 2
+}
+},
+"6217": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6302": {
+"n_rows": 2,
+"brands": {
+"Zara": 2
+},
+"categories": {
+"Other": 2
+}
+},
+"6304": {
+"n_rows": 1,
+"brands": {
+"Zara": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"6307": {
+"n_rows": 4,
+"brands": {
+"Silk Soft": 2,
+"Gillette": 1,
+"Salve": 1
+},
+"categories": {
+"Other": 3,
+"Clothing": 1
+}
+},
+"6402": {
+"n_rows": 13,
+"brands": {
+"Unknown": 13
+},
+"categories": {
+"Clothing": 13
+}
+},
+"6403": {
+"n_rows": 4,
+"brands": {
+"Unknown": 2,
+"Royal": 1,
+"Zara": 1
+},
+"categories": {
+"Clothing": 3,
+"Other": 1
+}
+},
+"6404": {
+"n_rows": 13,
+"brands": {
+"Unknown": 12,
+"Zara": 1
+},
+"categories": {
+"Clothing": 12,
+"Other": 1
+}
+},
+"6405": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6505": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"6601": {
+"n_rows": 1,
+"brands": {
+"Coca-Cola": 1
+},
+"categories": {
+"Beverages": 1
+}
+},
+"6804": {
+"n_rows": 2,
+"brands": {
+"Unknown": 2
+},
+"categories": {
+"Other": 2
+}
+},
+"6805": {
+"n_rows": 1,
+"brands": {
+"Silk Soft": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"6910": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"6912": {
+"n_rows": 2,
+"brands": {
+"Unknown": 2
+},
+"categories": {
+"Household": 1,
+"Other": 1
+}
+},
+"7007": {
+"n_rows": 1,
+"brands": {
+"Samsung": 1
+},
+"categories": {
+"Electronics": 1
+}
+},
+"7009": {
+"n_rows": 2,
+"brands": {
+"Mercedes-Benz": 2
+},
+"categories": {
+"Auto Parts": 2
+}
+},
+"7013": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Zara": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"7117": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"7301": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"7318": {
+"n_rows": 4,
+"brands": {
+"Unknown": 2,
+"Finder": 1,
+"Mercedes-Benz": 1
+},
+"categories": {
+"Other": 3,
+"Auto Parts": 1
+}
+},
+"7319": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"7320": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"7322": {
+"n_rows": 1,
+"brands": {
+"Royal": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"7323": {
+"n_rows": 3,
+"brands": {
+"Unknown": 2,
+"Zara": 1
+},
+"categories": {
+"Other": 1,
+"Food Products": 1,
+"Household": 1
+}
+},
+"7326": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"7412": {
+"n_rows": 1,
+"brands": {
+"Finder": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8201": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Finder": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"8202": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8203": {
+"n_rows": 3,
+"brands": {
+"Finder": 3
+},
+"categories": {
+"Other": 3
+}
+},
+"8204": {
+"n_rows": 1,
+"brands": {
+"Finder": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8205": {
+"n_rows": 10,
+"brands": {
+"Finder": 7,
+"Unknown": 3
+},
+"categories": {
+"Other": 9,
+"Auto Parts": 1
+}
+},
+"8207": {
+"n_rows": 5,
+"brands": {
+"Finder": 4,
+"Unknown": 1
+},
+"categories": {
+"Other": 5
+}
+},
+"8211": {
+"n_rows": 1,
+"brands": {
+"Finder": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8212": {
+"n_rows": 20,
+"brands": {
+"Gillette": 18,
+"Unknown": 2
+},
+"categories": {
+"Cosmetics": 7,
+"Clothing": 7,
+"Other": 6
+}
+},
+"8215": {
+"n_rows": 2,
+"brands": {
+"Royal": 1,
+"Unknown": 1
+},
+"categories": {
+"Other": 1,
+"Household": 1
+}
+},
+"8301": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Finder": 1
+},
+"categories": {
+"Other": 2
+}
+},
+"8302": {
+"n_rows": 3,
+"brands": {
+"Unknown": 3
+},
+"categories": {
+"Other": 2,
+"Household": 1
+}
+},
+"8309": {
+"n_rows": 1,
+"brands": {
+"Apache": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8311": {
+"n_rows": 1,
+"brands": {
+"Finder": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8407": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8409": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8413": {
+"n_rows": 2,
+"brands": {
+"Mercedes-Benz": 1,
+"Unknown": 1
+},
+"categories": {
+"Auto Parts": 2
+}
+},
+"8414": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8415": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Samsung": 1
+},
+"categories": {
+"Electronics": 2
+}
+},
+"8418": {
+"n_rows": 2,
+"brands": {
+"Samsung": 2
+},
+"categories": {
+"Electronics": 2
+}
+},
+"8419": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8421": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8422": {
+"n_rows": 1,
+"brands": {
+"Samsung": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"8450": {
+"n_rows": 2,
+"brands": {
+"Samsung": 2
+},
+"categories": {
+"Electronics": 2
+}
+},
+"8467": {
+"n_rows": 1,
+"brands": {
+"Finder": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8471": {
+"n_rows": 8,
+"brands": {
+"Samsung": 8
+},
+"categories": {
+"Electronics": 8
+}
+},
+"8480": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8481": {
+"n_rows": 5,
+"brands": {
+"Unknown": 3,
+"Mercedes-Benz": 1,
+"Samsung": 1
+},
+"categories": {
+"Other": 3,
+"Auto Parts": 1,
+"Electronics": 1
+}
+},
+"8483": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8484": {
+"n_rows": 3,
+"brands": {
+"Mercedes-Benz": 3
+},
+"categories": {
+"Auto Parts": 3
+}
+},
+"8501": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8504": {
+"n_rows": 1,
+"brands": {
+"Samsung": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8505": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8507": {
+"n_rows": 2,
+"brands": {
+"Mercedes-Benz": 1,
+"Samsung": 1
+},
+"categories": {
+"Auto Parts": 1,
+"Electronics": 1
+}
+},
+"8508": {
+"n_rows": 2,
+"brands": {
+"Samsung": 2
+},
+"categories": {
+"Electronics": 2
+}
+},
+"8510": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8511": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8512": {
+"n_rows": 6,
+"brands": {
+"Mercedes-Benz": 4,
+"Unknown": 2
+},
+"categories": {
+"Auto Parts": 4,
+"Other": 2
+}
+},
+"8516": {
+"n_rows": 4,
+"brands": {
+"Samsung": 2,
+"Unknown": 2
+},
+"categories": {
+"Electronics": 2,
+"Other": 1,
+"Household": 1
+}
+},
+"8517": {
+"n_rows": 9,
+"brands": {
+"Samsung": 8,
+"Unknown": 1
+},
+"categories": {
+"Electronics": 8,
+"Other": 1
+}
+},
+"8518": {
+"n_rows": 2,
+"brands": {
+"Unknown": 1,
+"Samsung": 1
+},
+"categories": {
+"Other": 1,
+"Electronics": 1
+}
+},
+"8526": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8528": {
+"n_rows": 23,
+"brands": {
+"Samsung": 23
+},
+"categories": {
+"Electronics": 23
+}
+},
+"8536": {
+"n_rows": 16,
+"brands": {
+"Unknown": 15,
+"Mercedes-Benz": 1
+},
+"categories": {
+"Other": 15,
+"Auto Parts": 1
+}
+},
+"8538": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8541": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"8543": {
+"n_rows": 1,
+"brands": {
+"Savax": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"8544": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"8546": {
+"n_rows": 1,
+"brands": {
+"Royal": 1
+},
+"categories": {
+"Household": 1
+}
+},
+"8703": {
+"n_rows": 6,
+"brands": {
+"Unknown": 5,
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 6
+}
+},
+"8708": {
+"n_rows": 37,
+"brands": {
+"Mercedes-Benz": 30,
+"Unknown": 7
+},
+"categories": {
+"Auto Parts": 31,
+"Other": 5,
+"Clothing": 1
+}
+},
+"8715": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9004": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"9018": {
+"n_rows": 1,
+"brands": {
+"Samsung": 1
+},
+"categories": {
+"Electronics": 1
+}
+},
+"9027": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9032": {
+"n_rows": 1,
+"brands": {
+"Mercedes-Benz": 1
+},
+"categories": {
+"Auto Parts": 1
+}
+},
+"9113": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9401": {
+"n_rows": 1,
+"brands": {
+"Royal": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9503": {
+"n_rows": 6,
+"brands": {
+"Unknown": 3,
+"Gillette": 1,
+"Athenk": 1,
+"Royal": 1
+},
+"categories": {
+"Other": 3,
+"Clothing": 1,
+"Food Products": 1,
+"Auto Parts": 1
+}
+},
+"9506": {
+"n_rows": 1,
+"brands": {
+"Gillette": 1
+},
+"categories": {
+"Clothing": 1
+}
+},
+"9603": {
+"n_rows": 7,
+"brands": {
+"Colgate": 4,
+"Unknown": 3
+},
+"categories": {
+"Other": 6,
+"Cosmetics": 1
+}
+},
+"9608": {
+"n_rows": 1,
+"brands": {
+"Unknown": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9609": {
+"n_rows": 1,
+"brands": {
+"Royal": 1
+},
+"categories": {
+"Other": 1
+}
+},
+"9616": {
+"n_rows": 2,
+"brands": {
+"Colgate": 1,
+"Pampers": 1
+},
+"categories": {
+"Cosmetics": 1,
+"Other": 1
+}
+},
+"9619": {
+"n_rows": 47,
+"brands": {
+"Pampers": 37,
+"Unknown": 9,
+"Silk Soft": 1
+},
+"categories": {
+"Other": 24,
+"Household": 18,
+"Clothing": 5
+}
+},
+"9703": {
+"n_rows": 1,
+"brands": {
+"Alex": 1
+},
+"categories": {
+"Other": 1
+}
+}
+}
