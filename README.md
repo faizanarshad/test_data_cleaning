@@ -2,6 +2,8 @@
 
 BiLSTM-based **text → ADG_CODE** classification for retail product data (Armenian / Latin), plus **evaluation**, **inference**, and an **ADG → brand / industry** lookup from the dataset.
 
+**New to the project?** Start with the beginner-friendly **[Client guide](docs/CLIENT_GUIDE.md)** (purpose, folders, workflow, commands, troubleshooting).
+
 ## Project layout
 
 ```text
@@ -17,6 +19,8 @@ BiLSTM-based **text → ADG_CODE** classification for retail product data (Armen
 │   ├── predict.py
 │   └── adg_lookup.py           # Code → brand / category (empirical)
 ├── tests/                       # pytest smoke tests
+├── docs/
+│   └── CLIENT_GUIDE.md          # Step-by-step guide for non-experts
 ├── pyproject.toml               # Dependencies and optional dev extras
 └── LICENSE                      # MIT
 ```
