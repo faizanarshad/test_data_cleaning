@@ -6,7 +6,7 @@ BiLSTM-based **text → ADG_CODE** classification for retail product data (Armen
 
 ```text
 ├── data/
-│   └── brand_task.csv          # Source dataset (do not rename columns without updating loaders)
+│   └── brand_task.csv          # Source dataset
 ├── artifacts/                  # Generated: models, reports, caches (*.keras gitignored)
 ├── src/brand_classification/   # Application package
 │   ├── config.py                 # Paths (project root, data, artifacts)
@@ -17,10 +17,8 @@ BiLSTM-based **text → ADG_CODE** classification for retail product data (Armen
 │   ├── predict.py
 │   └── adg_lookup.py           # Code → brand / category (empirical)
 ├── tests/                       # pytest smoke tests
-├── pyproject.toml               # Package metadata + dependencies
-├── requirements.txt             # Runtime pins (same as pyproject)
-├── LICENSE                      # MIT
-└── bilstm_train.py, …          # Thin wrappers (call package; work without pip install -e)
+├── pyproject.toml               # Dependencies and optional dev extras
+└── LICENSE                      # MIT
 ```
 
 ## Dataset (`data/brand_task.csv`)
@@ -32,7 +30,7 @@ BiLSTM-based **text → ADG_CODE** classification for retail product data (Armen
 | `BRAND`    | Brand                                         |
 | `CATEGORY` | Industry / category (e.g. Beverages)         |
 
-## Setup (client / production)
+## Setup
 
 ```bash
 cd /path/to/test_data_cleaning
@@ -42,9 +40,13 @@ pip install -U pip
 pip install -e .
 ```
 
-Optional: `pip install -r requirements-dev.txt` to run tests.
+Install test dependencies (pytest):
 
-## Commands (recommended)
+```bash
+pip install -e ".[dev]"
+```
+
+## Commands
 
 Run from the **repository root** after `pip install -e .`:
 
@@ -54,13 +56,6 @@ Run from the **repository root** after `pip install -e .`:
 | Evaluate | `python -m brand_classification.evaluate` |
 | Predict ADG from text | `python -m brand_classification.predict -n "…" -b "…" -c "…"` |
 | ADG → brand / industry | `python -m brand_classification.adg_lookup 2101` |
-
-**Legacy scripts** (same behavior, no editable install required — they add `src/` to `PYTHONPATH`):
-
-- `python bilstm_train.py`
-- `python evaluate_bilstm.py`
-- `python predict_bilstm.py`
-- `python adg_to_brand_industry.py 2101`
 
 ## Artifacts (`artifacts/`)
 
@@ -77,7 +72,7 @@ After clone, run **training** once to create `.keras` files locally (or copy the
 ## Tests
 
 ```bash
-pip install -r requirements-dev.txt
+pip install -e ".[dev]"
 pytest
 ```
 

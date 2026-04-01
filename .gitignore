@@ -5,8 +5,8 @@ __pycache__/
 venv/
 .env
 .DS_Store
+.pytest_cache/
 *.keras
 *.egg-info/
 dist/
 build/
-bilstm_artifacts/
