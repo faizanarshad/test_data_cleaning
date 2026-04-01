@@ -6,3 +6,7 @@ venv/
 .env
 .DS_Store
 *.keras
+*.egg-info/
+dist/
+build/
+bilstm_artifacts/
