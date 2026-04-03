@@ -9,8 +9,12 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 
-from .config import ARTIFACT_DIR
-from .preprocessing import clean_text
+from .config import ARTIFACT_DIR, BRAND_CLASSES_PATH, MODEL_BRAND_PATH
+from .preprocessing import (
+    build_text_for_brand_model,
+    clean_text,
+    training_text_to_brand_model_input,
+)
 
 MODEL_PATH = ARTIFACT_DIR / "bilstm_best.keras"
 CLASSES_PATH = ARTIFACT_DIR / "label_encoder_classes.json"
@@ -65,6 +69,41 @@ def predict_adg(
     return results
 
 
+def load_brand_model_and_classes():
+    if not MODEL_BRAND_PATH.is_file() or not BRAND_CLASSES_PATH.is_file():
+        return None
+    with open(BRAND_CLASSES_PATH, encoding="utf-8") as f:
+        raw = json.load(f)
+        classes = [str(x) for x in raw]
+    model = keras.models.load_model(MODEL_BRAND_PATH)
+    return model, classes
+
+
+def predict_brand(
+    model: keras.Model,
+    classes: list[str],
+    text_inputs: list[str],
+    top_k: int = 5,
+) -> list[dict]:
+    X = string_matrix([str(t) for t in text_inputs])
+    probs = model.predict(X, batch_size=32, verbose=0)
+    results = []
+    for row in probs:
+        idx = np.argsort(-row)[:top_k]
+        results.append(
+            {
+                "top_brands": [
+                    {
+                        "brand": str(classes[i]),
+                        "probability": float(row[i]),
+                    }
+                    for i in idx
+                ]
+            }
+        )
+    return results
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Predict ADG_CODE from product text.")
     parser.add_argument("-n", "--name", type=str, help="Product name (GOOD_NAME)")
@@ -80,11 +119,14 @@ def main() -> None:
     args = parser.parse_args()
 
     model, classes = load_model_and_classes()
+    brand_bundle = load_brand_model_and_classes()
 
     if args.text:
         texts = [args.text]
+        brand_texts = [training_text_to_brand_model_input(args.text)]
     elif args.name:
         texts = [build_text_input(args.name, args.brand, args.category)]
+        brand_texts = [build_text_for_brand_model(args.name, args.category)]
     else:
         demos = [
             build_text_input("Նեսկաֆե գոլդ 75գ", "Nescafe", "Beverages"),
@@ -97,16 +139,40 @@ def main() -> None:
         ]
         print("No --name or --text given; running demo predictions.\n")
         texts = demos
+        brand_texts = [
+            build_text_for_brand_model("Նեսկաֆե գոլդ 75գ", "Beverages"),
+            build_text_for_brand_model("Կոմպոտ Արտֆուդ սերկևիլ ա/տ 1լ", "Beverages"),
+            build_text_for_brand_model(
+                "LED Հեռուստացույց SAMSUNG UE65CU8000UXRU",
+                "Electronics",
+            ),
+        ]
 
     out = predict_adg(model, classes, texts, top_k=args.top_k)
+    brand_out = None
+    if brand_bundle is not None:
+        b_model, b_classes = brand_bundle
+        brand_out = predict_brand(b_model, b_classes, brand_texts, top_k=args.top_k)
+    else:
+        print(
+            "\n(Brand prediction skipped: train brand model with "
+            "python -m brand_classification.train_brand)\n"
+        )
 
     for i, (txt, pred) in enumerate(zip(texts, out)):
         print("=" * 60)
         print(f"Input {i + 1}:")
         print(txt[:500] + ("..." if len(txt) > 500 else ""))
-        print("\nTop predictions:")
+        print("\nTop ADG predictions:")
         for j, p in enumerate(pred["top_predictions"], 1):
             print(f"  {j}. ADG_CODE {p['adg_code']}: {p['probability']:.4f}")
+        if brand_out is not None:
+            bt = brand_texts[i]
+            print(f"\nBrand model input (name + category, no brand label):")
+            print(bt[:500] + ("..." if len(bt) > 500 else ""))
+            print("\nTop brand predictions:")
+            for j, p in enumerate(brand_out[i]["top_brands"], 1):
+                print(f"  {j}. {p['brand']}: {p['probability']:.4f}")
         print()
 
 

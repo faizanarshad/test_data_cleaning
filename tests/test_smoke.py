@@ -4,7 +4,11 @@ from pathlib import Path
 
 from brand_classification import __version__
 from brand_classification.config import ARTIFACT_DIR, DATA_CSV, PROJECT_ROOT
-from brand_classification.preprocessing import clean_text
+from brand_classification.preprocessing import (
+    build_text_for_brand_model,
+    clean_text,
+    training_text_to_brand_model_input,
+)
 
 
 def test_version():
@@ -27,6 +31,16 @@ def test_artifacts_dir():
 def test_clean_text():
     assert clean_text("  a  b  ") == "a b"
     assert clean_text("") == ""
+
+
+def test_build_text_for_brand_model():
+    assert build_text_for_brand_model("x", "Y") == "x [CAT] Y"
+    assert build_text_for_brand_model("x", "") == "x [CAT] "
+
+
+def test_training_text_to_brand_model_input():
+    t = "foo [BRAND] Bar [CAT] Bev"
+    assert training_text_to_brand_model_input(t) == "foo [CAT] Bev"
 
 
 def test_data_file_exists():
